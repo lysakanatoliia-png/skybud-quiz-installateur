@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Не кэшировать саму HTML-страницу — иначе браузер может не заметить,
+     что ниже подключаются новые версии data.js/app.js/style.css -->
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<title>Обучение · SkyBud Installateur и Assistant</title>
+<!--
+  ВАЖНО ПРИ ОБНОВЛЕНИИ КОНТЕНТА (новые вопросы, правки, новый раздел):
+  увеличьте номер версии ниже (?v=N) у ВСЕХ трёх файлов сразу.
+  Без этого у пользователей, которые уже открывали страницу раньше,
+  браузер может показать старую закэшированную версию вопросов/логики.
+-->
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<div id="app"></div>
+<script src="data.js?v=3"></script>
+<script src="telegram-config.js?v=3"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+:root {
+  --orange: #ff6b35;
+  --orange-dark: #e85320;
+  --ink: #1a1a1a;
+  --bg: #f4f4f6;
+  --green: #1e8e3e;
+  --green-bg: #e6f4ea;
+  --red: #c0392b;
+  --red-bg: #fdecea;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  display: flex;
+  justify-content: center;
+  padding: 24px 12px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  max-width: 720px;
+  width: 100%;
+  padding: 28px 26px;
+}
+
+/* --- старт --- */
+.start-card { text-align: center; }
+.start-card .logo { width: 140px; margin-bottom: 12px; }
+.start-card h1 { font-size: 19px; margin: 6px 0 10px; }
+.muted { color: #777; font-size: 14px; }
+.section-list {
+  list-style: none; padding: 0; margin: 18px 0; text-align: left;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.section-list li {
+  font-size: 14px; padding: 8px 12px; background: #fafafa;
+  border-left: 3px solid var(--orange); border-radius: 4px;
+}
+.section-list em { color: #999; font-style: normal; }
+.dot { display: none; }
+.last-attempt { margin-top: 10px; }
+
+.name-form { display: flex; flex-direction: column; gap: 10px; margin: 18px 0; text-align: left; }
+.text-input {
+  font-size: 16px; /* >=16px — иначе iOS зумит экран при фокусе на поле */
+  padding: 12px 14px; border: 1.5px solid #ddd; border-radius: 8px; font-family: inherit;
+}
+.text-input:focus { outline: none; border-color: var(--orange); }
+.error { color: var(--red); font-size: 13px; margin: 0; }
+#changeNameLink { color: var(--orange-dark); text-decoration: none; }
+#changeNameLink:hover { text-decoration: underline; }
+#sendStatus { font-size: 13px; margin: 4px 0 14px; }
+#sendStatus.ok { color: var(--green); }
+#sendStatus.bad { color: var(--red); }
+
+.btn {
+  border: none; border-radius: 8px; padding: 12px 22px;
+  font-size: 15px; font-weight: 700; cursor: pointer;
+}
+.btn.primary { background: var(--orange); color: #fff; }
+.btn.primary:hover { background: var(--orange-dark); }
+
+/* --- прогресс --- */
+.progress-wrap { margin-bottom: 18px; }
+.progress-bar {
+  height: 8px; background: #eee; border-radius: 4px; overflow: hidden;
+}
+.progress-fill { height: 100%; background: var(--orange); transition: width .3s; }
+.progress-label { font-size: 12px; color: #888; margin-top: 6px; }
+
+/* --- вопрос --- */
+.question-row { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+.shot {
+  flex: 0 0 200px; border: 2px solid var(--orange); border-radius: 10px;
+  overflow: hidden; background: #fafafa; display: flex; align-items: center; justify-content: center;
+  min-height: 120px;
+}
+.shot img { width: 100%; display: block; }
+.shot.no-shot {
+  flex-direction: column; color: #888; text-align: center; padding: 20px 14px;
+  background: #fafafa;
+}
+.shot.no-shot .hint-icon { font-size: 40px; line-height: 1; margin-bottom: 10px; }
+.shot.no-shot .hint-label { font-size: 13px; font-weight: 600; color: #999; }
+.qa { flex: 1 1 320px; min-width: 260px; }
+.question-text { font-size: 16px; font-weight: 600; margin: 0 0 14px; line-height: 1.4; }
+
+.options { display: flex; flex-direction: column; gap: 8px; }
+.option {
+  text-align: left; padding: 12px 14px; border-radius: 8px;
+  border: 1.5px solid #ddd; background: #fff; font-size: 14.5px;
+  cursor: pointer; transition: background .15s, border-color .15s;
+}
+.option:hover:not(:disabled) { border-color: var(--orange); background: #fff6f2; }
+.option:disabled { cursor: default; }
+.option.correct { background: var(--green-bg); border-color: var(--green); font-weight: 700; }
+.option.wrong { background: var(--red-bg); border-color: var(--red); }
+
+.explanation {
+  margin-top: 14px; padding: 12px 14px; border-radius: 8px; font-size: 14px; line-height: 1.4;
+}
+.explanation.ok { background: var(--green-bg); color: #16532b; }
+.explanation.bad { background: var(--red-bg); color: #7a2015; }
+
+#nextBtn { margin-top: 16px; }
+
+/* --- результаты --- */
+.results-card { text-align: center; }
+.results-card h1 { font-size: 22px; margin-bottom: 4px; }
+.results-card h1.ok { color: var(--green); }
+.results-card h1.bad { color: var(--red); }
+.score-big { font-size: 34px; font-weight: 800; margin: 6px 0; }
+
+.missed { text-align: left; margin: 20px 0; }
+.missed h3 { font-size: 15px; margin-bottom: 10px; }
+.missed-item {
+  background: var(--red-bg); border-left: 3px solid var(--red);
+  border-radius: 6px; padding: 10px 14px; margin-bottom: 10px; font-size: 13.5px;
+}
+.missed-item .q { font-weight: 700; margin: 0 0 4px; }
+.missed-item .a { margin: 0 0 4px; }
+.missed-item .exp { margin: 0; color: #555; }
+
+/* ---------- Адаптив: телефоны и узкие экраны ---------- */
+@media (max-width: 560px) {
+  body { padding: 12px 8px; }
+  .card { padding: 20px 16px; border-radius: 12px; }
+
+  /* На десктопе скрин слева + текст справа. На узком экране это не помещается
+     (фикс. 200px скрина + мин. 260px текста > ширины экрана) — переключаем в колонку. */
+  .question-row { flex-direction: column; gap: 14px; }
+  .shot { flex: 0 0 auto; width: 100%; max-width: 260px; margin: 0 auto; min-height: 0; }
+  .qa { width: 100%; min-width: 0; }
+
+  .start-card h1 { font-size: 17px; }
+  .question-text { font-size: 15px; }
+  .option { font-size: 14px; padding: 11px 12px; }
+  .score-big { font-size: 28px; }
+  .btn.primary { width: 100%; }
+}
+
+/* ---------- Планшеты: чуть уже колонки, но раскладка как на десктопе ---------- */
+@media (min-width: 561px) and (max-width: 900px) {
+  .card { max-width: 640px; }
+}

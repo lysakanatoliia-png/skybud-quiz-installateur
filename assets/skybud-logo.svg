@@ -1,0 +1,37 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 590" width="590" height="590">
+	<title>ЛОго ОК -ai</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m293.82 109.33v50.8h16.67v69.36h4.55v-104.24h8.35v104.24h17.05v-29.19h10.99v-79.6h2.28v79.6h16.68v29.19h9.09v43.96h9.1v-29.18h14.41v29.18h11.36v-39.79h6.82v39.79h28.82v-36h2.27v36h17.44v4.94h-17.44v4.54h74.62v16.25h-437.32v-16.25h57.19v-17.92h31.08v-107.92h38.66v87.18h15.17v20.74h-15.17v17.92h24.26v-173.6zm109.17 173.6h11.37v-4.54h-11.37zm18.19 0h28.81v-4.55h-28.81zm-40.18 0h7.58v-4.54h-7.58z"/>
+		</clipPath>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(437.321,0,0,189.851,89.56,299.179)">
+			<stop offset="0" stop-color="#56250a"/>
+			<stop offset=".006" stop-color="#56250a"/>
+			<stop offset=".545" stop-color="#fed255"/>
+			<stop offset="1" stop-color="#56250a"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: url(#g1) } 
+	</style>
+	<g id="Слой 1">
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="s0" d="m186.7 370c0 4.3-1.4 6.9-6.9 6.9h-22.3c-4.7 0-6.8-2.4-6.8-6.5v-2.9l7.2-1.3v4.4h20.8q0.9 0 1-1v-7.4q0-1-1.1-1h-20.3c-5 0-6.8-2.5-6.8-6.6v-8.4c0-5.2 2.3-6.8 6.8-6.8h21.1c5.7 0 7.1 2.6 7.1 6.8v2.6l-7.1 1.3v-4.4h-19.8c-0.6 0-1 0.2-1 1.1v7.1c0 0.7 0.1 0.9 1 0.9h20.4c4.7 0 6.7 2.4 6.7 6.7z"/>
+				<path id="&lt;Path&gt;" class="s0" d="m235.6 376.9l-20.9-17.8v17.8h-7.1v-37.5h7.1v16.6l19.1-16.6h9.2l-20.3 17.6 23.3 19.9z"/>
+				<path id="&lt;Path&gt;" class="s0" d="m279.9 359.8v17.1h-7.2v-16.8l-17.3-20.7h8.7l12.2 15 12.4-15h8.2z"/>
+				<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s0" d="m347.8 369.7c0 4.2-1.5 7.2-7.2 7.2h-27.9v-37.5h26.7c5.8 0 7.9 2.8 7.9 7.3v5.6c0 2.4-1 3.7-2 4.4-0.6 0.4-1.2 0.7-1.9 0.8q1.2 0.1 2.2 0.7c1.1 0.7 2.2 2 2.2 4.5zm-7.6-21.6c0-1.8-0.4-2.5-2.4-2.5h-18v9.3h18c1.7 0 2.4-0.6 2.4-2.2zm0.5 14.9c0-1.8-0.4-2.4-2.4-2.4h-18.5v10.2h18.5c2 0 2.4-0.6 2.4-2.3z"/>
+				<path id="&lt;Path&gt;" class="s0" d="m405 370c0 4.2-2.4 6.9-6.9 6.9h-22.6c-4.2 0-7-2.3-7-6.8v-30.7h7.1v30.2c0 0.9 0.3 1 1.1 1h20.2c0.8 0 1-0.1 1-1v-30.2h7.1z"/>
+				<path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="s0" d="m464.8 369.5c0 4.9-3 7.4-7.7 7.4h-30.5v-37.5h30.7c5 0 7.5 3 7.5 7.4zm-31.1 1.2h22.2c1.5 0 1.7-0.4 1.7-1.8v-21c0-1.5-0.3-2.1-1.8-2.1h-22.1z"/>
+				<path id="форма 1" class="s0" d="m754 41v100h-100v-100z"/>
+			</g>
+			<g id="&lt;Clip Group&gt;" clip-path="url(#cp1)">
+				<path id="&lt;Path&gt;" class="s1" d="m89.6 109.3h437.3v189.9h-437.3z"/>
+			</g>
+			<g id="&lt;Group&gt;">
+				<path id="&lt;Path&gt;" class="s0" d="m535 316.1h-453.5v-10h453.5z"/>
+			</g>
+		</g>
+	</g>
+</svg>
