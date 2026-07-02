@@ -15,7 +15,9 @@
 //     https://api.telegram.org/bot<ВАШ_ТОКЕН>/getUpdates
 //     и найдите в ответе число вида "chat":{"id": -1001234567890, ...} — это и есть CHAT_ID.
 
-const TELEGRAM_CONFIG = {
+// window.* — чтобы переменная была доступна из app.js как window.TELEGRAM_CONFIG
+// (обычный "const" здесь не попал бы в window, а app.js его не увидел бы).
+window.TELEGRAM_CONFIG = {
   botToken: "8935389516:AAFSF69D3H7EAF31_v0715UQE8L7A7bKtzA",
   chatId: "7013352756",
 };
